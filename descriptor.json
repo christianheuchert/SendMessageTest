@@ -1,0 +1,55 @@
+{
+  "name": "Send Priority Message To Assets",
+  "type": "flogo:activity",
+  "version": "0.0.1",
+  "title": "Send Priority Message To Assets",
+  "description": "Sends priority message to staff devices, on success returns true, else false",
+  "homepage": "https://support.airistaflow.com/hc/en-us",
+  "input": [
+    {
+      "name": "MessageOptions",
+      "type": "string",
+      "allowed" : ["Beep", "Twinkle", "Stairs", "Siren", "Silent"],
+      "required": true
+    },
+    {
+      "name": "MessageExpiration",
+      "type": "int",
+      "required": false
+    },
+    {
+      "name": "IP",
+      "type": "string",
+      "isGlobal": true,
+      "required": true
+    },
+    {
+      "name": "Message",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "Password",
+      "type": "string",
+      "isGlobal": true,
+      "required": true
+    },
+    {
+      "name": "StaffIdList",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "Username",
+      "type": "string",
+      "isGlobal": true,
+      "required": true
+    }
+  ],
+  "output": [
+    {
+      "name": "Status",
+      "type": "string"
+    }
+  ]
+}
