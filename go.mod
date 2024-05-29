@@ -1,4 +1,4 @@
-module github.com/AiRISTAFlowInc/fs-activity/FSSendPriorityMessageToAssets
+module github.com/christianheuchert/SendMessageTest
 
 go 1.22.0
 
